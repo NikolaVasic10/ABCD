@@ -15,5 +15,8 @@ public class Test5 {
         driver.findElement(By.xpath("//input[@id='login1']")).sendKeys("hello");
         driver.findElement(By.cssSelector("input#password")).sendKeys("goodbye");
         driver.findElement(By.xpath("//input[contains(@name,'proceed')]")).click();
+
+        Thread.sleep(1000L);
+        driver.close();
     }
 }

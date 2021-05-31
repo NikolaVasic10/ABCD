@@ -23,6 +23,9 @@ public class Test6 {
         dropdown.selectByValue("AED");
         System.out.println(dropdown.getFirstSelectedOption().getText());
 
+        Thread.sleep(1000L);
+        driver.close();
+
 
     }
 }
