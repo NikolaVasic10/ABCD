@@ -22,5 +22,8 @@ public class Test7 {
         driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 
         driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active.ui-state-hover")).click();
+
+        Thread.sleep(1000L);
+        driver.close();
     }
 }

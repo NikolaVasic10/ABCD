@@ -59,5 +59,8 @@ public class Test8 {
         Assert.assertEquals(driver.findElement(By.cssSelector("div[id='divpaxinfo']")).getText(), "4 Adult");
 
         driver.findElement(By.cssSelector("span[class='btn-find-flight-home'] input[type='submit']")).click();
+
+        Thread.sleep(1000L);
+        driver.close();
     }
 }
