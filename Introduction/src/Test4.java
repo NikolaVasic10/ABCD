@@ -16,5 +16,8 @@ public class Test4 {
      //   driver.findElement(By.cssSelector("input[name='pass']")).sendKeys("mypass"); // CSS
         driver.findElement(By.cssSelector("input#email")).sendKeys("Jonnyemail");
         driver.findElement(By.cssSelector("input#pass")).sendKeys("Jonnyemail");
+
+        Thread.sleep(1000L);
+        driver.close();
     }
 }
