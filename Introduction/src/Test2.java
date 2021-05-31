@@ -14,6 +14,6 @@ public class Test2 {
         driver.findElement(By.name("pass")).sendKeys("pass123");
         driver.findElement(By.linkText("Forgot Password?")).click();
         driver.navigate().back();
-
+        driver.close();
     }
 }
