@@ -29,10 +29,15 @@ public class FluentWaitExample {
 
         WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
             public WebElement apply(WebDriver driver) {
-                return driver.findElement(By.xpath("//div[@id='finish'] //h4"));
+                if(driver.findElement(By.xpath("//div[@id='finish'] //h4")).isDisplayed()){
+                    return driver.findElement(By.xpath("//div[@id='finish'] //h4"));
+                } else {
+                    return null;
+                }
             }
         });
 
         System.out.println(driver.findElement(By.xpath("//div[@id='finish'] //h4")).isDisplayed());
+        System.out.println(driver.findElement(By.xpath("//div[@id='finish'] //h4")).getText());
     }
 }
